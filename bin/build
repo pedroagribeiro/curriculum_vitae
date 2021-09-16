@@ -1,0 +1,5 @@
+#!/bin/bash
+
+docker exec -it texlive pdflatex --shell-escape resume.tex
+rubber --clean resume 
+rm -f resume.out pdfa.xmpi
